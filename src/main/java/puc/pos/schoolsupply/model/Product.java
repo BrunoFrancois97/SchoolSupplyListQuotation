@@ -1,4 +1,4 @@
-package model;
+package puc.pos.schoolsupply.model;
 
 public class Product {
     public String description;
