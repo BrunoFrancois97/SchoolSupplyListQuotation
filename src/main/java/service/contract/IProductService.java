@@ -1,4 +1,4 @@
-package repository.contract;
+package service.contract;
 
 public interface IProductService {
 }

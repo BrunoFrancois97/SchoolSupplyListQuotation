@@ -1,7 +1,7 @@
-package service.implementation;
+package repository.implementation;
 
 import puc.pos.schoolsupply.model.Quotation;
-import service.contract.IQuotationRepository;
+import repository.contract.IQuotationRepository;
 
 import java.util.List;
 
