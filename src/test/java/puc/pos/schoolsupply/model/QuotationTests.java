@@ -1,14 +1,11 @@
-package tests;
+package puc.pos.schoolsupply.model;
 
-import org.junit.jupiter.api.Test;
-import org.testng.Assert;
-import puc.pos.schoolsupply.model.Item;
-import puc.pos.schoolsupply.model.Quotation;
-import puc.pos.schoolsupply.model.SupplyList;
-import service.contract.IQuotationService;
-import service.contract.IShopService;
-import service.implementation.QuotationService;
-import service.implementation.ShopService;
+import org.junit.Assert;
+import org.junit.Test;
+import puc.pos.schoolsupply.service.contract.IQuotationService;
+import puc.pos.schoolsupply.service.contract.IShopService;
+import puc.pos.schoolsupply.service.implementation.QuotationService;
+import puc.pos.schoolsupply.service.implementation.ShopService;
 
 import java.util.ArrayList;
 

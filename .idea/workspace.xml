@@ -2,10 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78d1a14a-da78-4fc2-a790-38ae3d7f41b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PUC-Gatti.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolSupplyListQuotation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IQuotationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IQuotationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/ISchoolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/ISchoolService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/ISupplyListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/ISupplyListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/QuotationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/QuotationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/SchoolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/SchoolService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/ShopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/SupplyListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/SupplyListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/contract/IItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/contract/IProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/contract/IQuotationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/contract/ISchoolRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/contract/IShopRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/contract/ISupplyListRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/implementation/ItemRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/implementation/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/implementation/QuotationRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/implementation/SchoolRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/implementation/ShopRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/implementation/SupplyListRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/contract/IItemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/contract/IProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/contract/IQuotationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/contract/ISchoolService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/contract/IShopService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/contract/ISupplyListService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/implementation/ItemService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/implementation/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/implementation/QuotationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/implementation/SchoolService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/implementation/ShopService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/implementation/SupplyListService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/QuotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/puc/pos/schoolsupply/model/QuotationTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,13 +82,17 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="puc.pos.schoolsupply.model" />
+      <recent name="puc.pos.schoolsupply" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Development\Java\PUC-Gatti\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Development\Java\PUC-Gatti\src\main\resources" />
       <recent name="D:\Development\Java\PUC-Gatti\src\main\resources\test" />
       <recent name="D:\Development\Java\PUC-Gatti\src\main\resources\json" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Development\Java\PUC-Gatti\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
