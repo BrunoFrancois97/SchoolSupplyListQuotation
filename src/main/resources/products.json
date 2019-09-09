@@ -1,0 +1,47 @@
+[
+  {
+    "id": 0,
+    "description": "Caderno 200 folhas",
+    "price": 15.0
+  },
+  {
+    "id": 1,
+    "description": "Caneta azul",
+    "price": 4.5
+  },
+  {
+    "id": 2,
+    "description": "Borracha branca",
+    "price": 3.2
+  },
+  {
+    "id": 3,
+    "description": "Cola branca",
+    "price": 5.0
+  },
+  {
+    "id": 4,
+    "description": "Cartolina",
+    "price": 5.2
+  },
+  {
+    "id": 5,
+    "description": "Lapis preto",
+    "price": 3.0
+  },
+  {
+    "id": 6,
+    "description": "Cola bastao",
+    "price": 4.2
+  },
+  {
+    "id": 7,
+    "description": "Apontador",
+    "price": 1.2
+  },
+  {
+    "id": 8,
+    "description": "Abaco",
+    "price": 12.0
+  }
+]

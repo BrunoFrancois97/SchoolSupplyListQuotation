@@ -11,6 +11,13 @@ public class Quotation {
 
     }
 
+    public Quotation(String quotedBy, double totalPrice, SupplyList supplyList, Shop shop){
+        this.quotedBy = quotedBy;
+        this.totalPrice = totalPrice;
+        this.supplyList = supplyList;
+        this.shop = shop;
+    }
+
     public String getQuotedBy() {
         return quotedBy;
     }
