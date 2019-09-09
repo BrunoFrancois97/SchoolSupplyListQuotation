@@ -2,6 +2,7 @@ package puc.pos.schoolsupply.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class SupplyList {
 
@@ -51,5 +52,18 @@ public class SupplyList {
 
     public void setSchool(School school) {
         this.school = school;
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if(obj == null) return false;
+        if(!SupplyList.class.isAssignableFrom(obj.getClass())) return false;
+
+        final SupplyList other = (SupplyList) obj;
+        if(!Objects.equals(this.school, other.school)) return false;
+        if(this.level != other.level) return false;
+        if(this.year != other.year) return false;
+
+        return true;
     }
 }

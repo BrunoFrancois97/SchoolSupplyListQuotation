@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import puc.pos.schoolsupply.model.Item;
 import puc.pos.schoolsupply.repository.contract.IItemRepository;
+import puc.pos.schoolsupply.repository.util.ResourcesManipulator;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -14,12 +15,11 @@ import java.util.List;
 
 public class ItemRepository implements IItemRepository {
 
-    private final String ITEMS_JSON;
+    private static final String ITEMS_JSON = ResourcesManipulator.getResourcePath("items.json");
 
     private static List<Item> items;
 
     public ItemRepository(){
-        ITEMS_JSON = getResourcePath("items.json");
         Gson gson = new Gson();
         try{
             Reader reader = new FileReader(ITEMS_JSON);
@@ -49,9 +49,4 @@ public class ItemRepository implements IItemRepository {
         return items;
     }
 
-    private String getResourcePath(String fileName){
-        String s = this.getClass().getClassLoader().getResource("").toString() + fileName;
-        s = s.replace("file:/", "");
-        return s;
-    }
 }

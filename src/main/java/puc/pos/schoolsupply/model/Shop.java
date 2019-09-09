@@ -2,6 +2,7 @@ package puc.pos.schoolsupply.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class Shop {
 
@@ -31,6 +32,17 @@ public class Shop {
 
     public void setProducts(ArrayList<Product> products) {
         this.products = products;
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if(obj == null) return false;
+        if(!Shop.class.isAssignableFrom(obj.getClass())) return false;
+
+        final Shop other = (Shop) obj;
+        if(!Objects.equals(this.name, other.name)) return false;
+
+        return true;
     }
 
 }

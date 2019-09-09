@@ -5,6 +5,7 @@ import com.google.gson.reflect.TypeToken;
 import puc.pos.schoolsupply.model.School;
 import puc.pos.schoolsupply.model.SupplyList;
 import puc.pos.schoolsupply.repository.contract.ISupplyListRepository;
+import puc.pos.schoolsupply.repository.util.ResourcesManipulator;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -14,13 +15,12 @@ import java.util.List;
 
 public class SupplyListRepository implements ISupplyListRepository {
 
-    private final String SUPPLYLIST_JSON;
+    private static final String SUPPLYLIST_JSON = ResourcesManipulator.getResourcePath("supplyLists.json");
 
     private static List<SupplyList> supplyLists;
 
     public SupplyListRepository() {
 
-        SUPPLYLIST_JSON = getResourcePath("supplyLists.json");
         Gson gson = new Gson();
         supplyLists = new ArrayList<>();
         try{
@@ -53,7 +53,7 @@ public class SupplyListRepository implements ISupplyListRepository {
     public List<SupplyList> findBySchool(School school) {
         List<SupplyList> schoolList = new ArrayList<>();
         for(SupplyList supplyList : supplyLists){
-            if(supplyList.getSchool().getName().equals(school.getName())){
+            if(supplyList.getSchool().equals(school)){
                 schoolList.add(supplyList);
             }
         }
@@ -82,7 +82,7 @@ public class SupplyListRepository implements ISupplyListRepository {
 
     public SupplyList findBySchoolLevelAndYear(School school, int level, int year) {
         for(SupplyList supplyList : supplyLists){
-            if(supplyList.getSchool().getName().equals(school.getName())){
+            if(supplyList.getSchool().equals(school)){
                 if(supplyList.getLevel() == level){
                     if(supplyList.getYear() == year){
                         return supplyList;
@@ -97,13 +97,7 @@ public class SupplyListRepository implements ISupplyListRepository {
         return supplyLists;
     }
 
-    private String getResourcePath(String fileName){
-        String s = this.getClass().getClassLoader().getResource("").toString() + fileName;
-        s = s.replace("file:/", "");
-        return s;
-    }
-
-    private class SupplyListJSON{
+    private static class SupplyListJSON{
         private String school;
         private int level;
         private int year;
