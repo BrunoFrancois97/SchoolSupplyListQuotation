@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78d1a14a-da78-4fc2-a790-38ae3d7f41b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/util/ResourcesManipulator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/quotations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/model/Quotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/model/Quotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/model/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/model/School.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/model/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/model/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/model/SupplyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/model/SupplyList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/contract/IQuotationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/contract/IQuotationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/implementation/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/implementation/ItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/implementation/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/implementation/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/implementation/QuotationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/implementation/QuotationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/implementation/SchoolRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/implementation/SchoolRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/implementation/ShopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/implementation/ShopRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/implementation/SupplyListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/repository/implementation/SupplyListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PUC-Gatti.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SchoolSupplyListQuotation.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +77,7 @@
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="puc.pos.schoolsupply.Application" />
-      <module name="PUC-Gatti" />
+      <module name="SchoolSupplyListQuotation" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="puc.pos.schoolsupply.*" />
