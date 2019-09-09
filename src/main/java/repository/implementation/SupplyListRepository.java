@@ -1,7 +1,7 @@
-package service.implementation;
+package repository.implementation;
 
 import puc.pos.schoolsupply.model.SupplyList;
-import service.contract.ISupplyListRepository;
+import repository.contract.ISupplyListRepository;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package service.contract;
+package repository.contract;
 
 import puc.pos.schoolsupply.model.Product;
 
