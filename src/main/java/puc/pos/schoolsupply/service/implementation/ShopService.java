@@ -2,18 +2,27 @@ package puc.pos.schoolsupply.service.implementation;
 
 import puc.pos.schoolsupply.model.Product;
 import puc.pos.schoolsupply.model.Shop;
+import puc.pos.schoolsupply.repository.contract.IShopRepository;
 import puc.pos.schoolsupply.service.contract.IShopService;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ShopService implements IShopService {
-    public Shop findById(String id) {
-        ArrayList<Product> products = addProducts(new ArrayList<Product>());
+
+    private final IShopRepository shopRepository;
+
+    public ShopService(IShopRepository shopRepository) {
+        this.shopRepository = shopRepository;
+    }
+
+    public Shop findById(int id) {
+       /* ArrayList<Product> products = addProducts(new ArrayList<Product>());
         Shop shop = new Shop();
         shop.setName("Test Shop");
         shop.setProducts(products);
-        return shop;
+        return shop;*/
+       return shopRepository.findById(id);
     }
 
     private ArrayList<Product> addProducts(ArrayList<Product> products)

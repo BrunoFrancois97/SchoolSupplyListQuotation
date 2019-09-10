@@ -3,44 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="78d1a14a-da78-4fc2-a790-38ae3d7f41b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IQuotationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IQuotationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/ISchoolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/ISchoolService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/IShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/ISupplyListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/contract/ISupplyListService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/ItemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/QuotationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/QuotationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/SchoolService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/SchoolService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/ShopService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/ShopService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/SupplyListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/SupplyListService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/contract/IItemRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/contract/IProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/contract/IQuotationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/contract/ISchoolRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/contract/IShopRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/contract/ISupplyListRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/implementation/ItemRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/implementation/ProductRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/implementation/QuotationRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/implementation/SchoolRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/implementation/ShopRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/repository/implementation/SupplyListRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/contract/IItemService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/contract/IProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/contract/IQuotationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/contract/ISchoolService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/contract/IShopService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/contract/ISupplyListService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/implementation/ItemService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/implementation/ProductService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/implementation/QuotationService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/implementation/SchoolService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/implementation/ShopService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/implementation/SupplyListService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/tests/QuotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/puc/pos/schoolsupply/model/QuotationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/puc/pos/schoolsupply/model/QuotationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/puc/pos/schoolsupply/model/QuotationTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +35,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1QX3eqAq8o7TOzJ7kSYGBW290SV" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -74,8 +50,9 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/target/classes/shops.json" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -113,7 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.QuotationTests">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="puc.pos.schoolsupply.Application" />
       <module name="SchoolSupplyListQuotation" />
@@ -127,8 +104,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QuotationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SchoolSupplyListQuotation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="puc.pos.schoolsupply.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="puc.pos.schoolsupply.model" />
+      <option name="MAIN_CLASS_NAME" value="puc.pos.schoolsupply.model.QuotationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuotationTests.testQuotationTotal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SchoolSupplyListQuotation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="puc.pos.schoolsupply.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="puc.pos.schoolsupply.model" />
+      <option name="MAIN_CLASS_NAME" value="puc.pos.schoolsupply.model.QuotationTests" />
+      <option name="METHOD_NAME" value="testQuotationTotal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuotationTests" />
+        <item itemvalue="JUnit.QuotationTests.testQuotationTotal" />
         <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
@@ -161,5 +171,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/QuotationService.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/puc/pos/schoolsupply/service/implementation/QuotationService.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
