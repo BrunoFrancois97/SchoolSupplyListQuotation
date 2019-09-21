@@ -37,6 +37,7 @@ public class QuotationTests {
     @Test
     public void testQuotationTotal() {
         Quotation quotation = quotationService.makeQuotation(supplyList);
+        Assert.assertNotNull(quotation);
         Assert.assertEquals(52.8, quotation.getTotalPrice(),0.01);
     }
 }
