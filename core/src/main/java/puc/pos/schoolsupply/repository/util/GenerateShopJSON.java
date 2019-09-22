@@ -5,11 +5,8 @@ import com.google.gson.GsonBuilder;
 import puc.pos.schoolsupply.model.Product;
 import puc.pos.schoolsupply.model.Shop;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.util.ArrayList;
 import java.util.Arrays;
 

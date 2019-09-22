@@ -1,0 +1,67 @@
+[
+  {
+    "school": "Escola A",
+    "level": 2,
+    "year": 2016,
+    "items":
+    [
+      "Caderno 200 folhas",
+      "Caneta azul",
+      "Borracha branca",
+      "Cola branca",
+      "Cartolina"
+    ]
+  },
+  {
+    "school": "Escola A",
+    "level": 4,
+    "year": 2017,
+    "items":
+    [
+      "Caderno 200 folhas",
+      "Borracha branca",
+      "Cola branca",
+      "Lapis preto",
+      "Cola bastao"
+    ]
+  },
+  {
+    "school": "Escola A",
+    "level": 4,
+    "year": 2014,
+    "items":
+    [
+      "Caderno 200 folhas",
+      "Borracha branca",
+      "Cola branca",
+      "Cartolina",
+      "Cola bastao"
+    ]
+  },
+  {
+    "school": "Escola B",
+    "level": 8,
+    "year": 2014,
+    "items":
+    [
+      "Caderno 200 folhas",
+      "Caneta azul",
+      "Borracha branca",
+      "Cartolina",
+      "Lapis preto",
+      "Cola bastao"
+    ]
+  },
+  {
+    "school": "Escola C",
+    "level": 2,
+    "year": 2019,
+    "items":
+    [
+      "Caderno 200 folhas",
+      "Caneta azul",
+      "Cola bastao",
+      "Apontador"
+    ]
+  }
+]

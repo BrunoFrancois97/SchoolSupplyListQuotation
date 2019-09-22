@@ -1,8 +1,8 @@
 package puc.pos.schoolsupply.model;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import puc.pos.schoolsupply.repository.implementation.ItemRepository;
 import puc.pos.schoolsupply.repository.implementation.ShopRepository;
 import puc.pos.schoolsupply.service.contract.IItemService;
@@ -16,13 +16,13 @@ import java.util.List;
 
 public class QuotationTests {
 
-    private IQuotationService quotationService;
-    private IShopService shopService;
-    private SupplyList supplyList;
-    private IItemService itemService;
+    private static IQuotationService quotationService;
+    private static IShopService shopService;
+    private static SupplyList supplyList;
+    private static IItemService itemService;
 
-    @Before
-    public void setUpBeforeClass() {
+    @BeforeAll
+    public static void setUpBeforeClass() {
         shopService = new ShopService(new ShopRepository());
         itemService = new ItemService(new ItemRepository());
         quotationService = new QuotationService(shopService);
@@ -30,14 +30,14 @@ public class QuotationTests {
         supplyList.setItems(buildSupplyListItems());
     }
 
-    private List<Item> buildSupplyListItems(){
+    private static List<Item> buildSupplyListItems(){
         return itemService.findAll();
     }
 
     @Test
     public void testQuotationTotal() {
         Quotation quotation = quotationService.makeQuotation(supplyList);
-        Assert.assertNotNull(quotation);
-        Assert.assertEquals(52.8, quotation.getTotalPrice(),0.01);
+        Assertions.assertNotNull(quotation);
+        Assertions.assertEquals(52.8, quotation.getTotalPrice(),0.01);
     }
 }

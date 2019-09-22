@@ -2,7 +2,9 @@ package puc.pos.schoolsupply.repository.util;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import puc.pos.schoolsupply.model.*;
+import puc.pos.schoolsupply.model.Item;
+import puc.pos.schoolsupply.model.School;
+import puc.pos.schoolsupply.model.SupplyList;
 
 import java.io.FileWriter;
 import java.io.IOException;
