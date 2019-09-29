@@ -1,33 +1,37 @@
 package puc.pos.schoolsupply.repository.implementation;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import puc.pos.schoolsupply.model.School;
 import puc.pos.schoolsupply.repository.contract.ISchoolRepository;
 import puc.pos.schoolsupply.repository.util.ResourcesManipulator;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.Reader;
-import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.List;
 
 public class SchoolRepository implements ISchoolRepository {
 
-    private static final String SCHOOLS_JSON = ResourcesManipulator.getResourcePath("schools.json");
+    private static final String JSON = "schools.json";
 
     private static List<School> schools;
 
     public SchoolRepository(){
-        schools = new ArrayList<>();
-        Gson gson = new Gson();
-        try{
-            Reader reader = new FileReader(SCHOOLS_JSON);
-            schools = gson.fromJson(reader, new TypeToken<ArrayList<School>>(){}.getType());
-        } catch (FileNotFoundException e) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(ResourcesManipulator.getResourceStream(JSON)));
+        try {
+            buildList(reader);
+        } catch (IOException e) {
             e.printStackTrace();
         }
+    }
 
+    public SchoolRepository(String resourceFile){
+        BufferedReader reader = new BufferedReader(new InputStreamReader(ResourcesManipulator.getResourceStream(resourceFile)));
+        try {
+            buildList(reader);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public School findById(int id) {
@@ -43,6 +47,12 @@ public class SchoolRepository implements ISchoolRepository {
 
     public List<School> findAll() {
         return schools;
+    }
+
+    private void buildList(BufferedReader br) throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        schools = mapper.readValue(br, mapper.getTypeFactory().constructCollectionType(List.class, School.class));
+        br.close();
     }
 
 }

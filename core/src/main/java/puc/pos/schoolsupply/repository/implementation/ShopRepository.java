@@ -1,42 +1,39 @@
 package puc.pos.schoolsupply.repository.implementation;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import puc.pos.schoolsupply.model.Shop;
+import puc.pos.schoolsupply.repository.contract.IProductRepository;
 import puc.pos.schoolsupply.repository.contract.IShopRepository;
 import puc.pos.schoolsupply.repository.util.ResourcesManipulator;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.Reader;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ShopRepository implements IShopRepository {
 
-    private static final String SHOPS_JSON = ResourcesManipulator.getResourcePath("shops.json");;
+    private static final String JSON = "shops.json";
 
     private static List<Shop> shops;
 
     public ShopRepository(){
-        Gson gson = new Gson();
-        shops = new ArrayList<>();
-        try{
-            Reader reader = new FileReader(SHOPS_JSON);
-            List<ShopJSON> shopsJSON = gson.fromJson(reader, new TypeToken<ArrayList<ShopJSON>>(){}.getType());
-            ProductRepository prod = new ProductRepository();
-            for(ShopJSON shopJSON : shopsJSON){
-                Shop shop = new Shop();
-                for(Integer i : shopJSON.products){
-                    if(prod.findById(i) != null) shop.getProducts().add(prod.findById(i));
-                }
-                shop.setName(shopJSON.name);
-                shops.add(shop);
-            }
-        } catch (FileNotFoundException e) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(ResourcesManipulator.getResourceStream(JSON)));
+        try {
+            buildList(reader);
+        } catch (IOException e) {
             e.printStackTrace();
         }
+    }
 
+    public ShopRepository(String resourceFile){
+        BufferedReader reader = new BufferedReader(new InputStreamReader(ResourcesManipulator.getResourceStream(resourceFile)));
+        try {
+            buildList(reader);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public Shop findById(int id) {
@@ -56,9 +53,25 @@ public class ShopRepository implements IShopRepository {
         return shops;
     }
 
+    private void buildList(BufferedReader br) throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        List<ShopJSON> shopsJSON = mapper.readValue(br, mapper.getTypeFactory().constructCollectionType(List.class, ShopJSON.class));
+        br.close();
+        shops = new ArrayList<Shop>();
+        IProductRepository prod = new ProductRepository();
+        for(ShopJSON shopJSON : shopsJSON){
+            Shop shop = new Shop();
+            for(Integer i : shopJSON.products){
+                if(prod.findById(i) != null) shop.getProducts().add(prod.findById(i));
+            }
+            shop.setName(shopJSON.name);
+            shops.add(shop);
+        }
+    }
+
     private static class ShopJSON{
-        private String name;
-        private List<Integer> products;
+        public String name;
+        public List<Integer> products;
     }
 
 }

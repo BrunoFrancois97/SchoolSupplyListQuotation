@@ -2,9 +2,9 @@ package puc.pos.schoolsupply.model;
 
 public class Item {
 
+    private int id;
     private int quantity;
     private String description;
-    private int id;
 
     private static int counter;
 

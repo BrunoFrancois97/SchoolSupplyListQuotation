@@ -2,13 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78d1a14a-da78-4fc2-a790-38ae3d7f41b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/puc/pos/schoolsupply/repository/ItemRepositoryTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/java/puc/pos/schoolsupply/repository/ShopRepositoryTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/test/resources/supplyLists_test.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/SchoolSupplyRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/model/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/ItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/QuotationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/QuotationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/SchoolRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/SchoolRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/ShopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/ShopRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/SupplyListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/SupplyListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/util/GenerateShopJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/util/GenerateSupplyListJSON.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/util/ResourcesManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/util/ResourcesManipulator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/resources/supplyLists.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/supplyLists.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/resources/items.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/items_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/resources/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/products_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/resources/quotations.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/quotations_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/resources/schools.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/schools_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/resources/shops.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/shops_test.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/test/resources/supplyLists.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/config/WebAppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/config/WebAppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/QuotationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/QuotationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +42,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,7 +73,7 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/target/classes/shops.json" />
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/src/test/resources/items" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -65,17 +82,21 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Development\Java\PUC-Gatti\core\src\test\resources" />
+      <recent name="D:\Development\Java\PUC-Gatti\core\src\test\resources\items" />
       <recent name="D:\Development\Java\PUC-Gatti\core\src\main\resources" />
       <recent name="D:\Development\Java\PUC-Gatti\src\main\resources" />
       <recent name="D:\Development\Java\PUC-Gatti\src\main\resources\test" />
-      <recent name="D:\Development\Java\PUC-Gatti\src\main\resources\json" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="puc.pos.schoolsupply" />
       <recent name="puc.pos.schoolsupply.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Development\Java\PUC-Gatti\src\main\resources" />
+      <recent name="D:\Development\Java\PUC-Gatti\core\src\test\resources\items" />
+      <recent name="D:\Development\Java\PUC-Gatti\core\src\test\resources" />
+      <recent name="D:\Development\Java\PUC-Gatti\core\src\test\resources\test" />
+      <recent name="D:\Development\Java\PUC-Gatti\core\src\main\resources" />
+      <recent name="D:\Development\Java\PUC-Gatti\web\src\main\resources" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -99,13 +120,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.QuotationTests.testQuotationTotal (1)">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="puc.pos.schoolsupply.schoolsupply.Application" />
-      <module name="SchoolSupplyListQuotation" />
+  <component name="RunManager" selected="JUnit.ItemRepositoryTests.testDefaultAndTestReposHaveDiffSize">
+    <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="puc.pos.schoolsupply.Application" />
+      <module name="core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="puc.pos.schoolsupply.schoolsupply.*" />
+          <option name="PATTERN" value="puc.pos.schoolsupply.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,17 +134,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuotationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SchoolSupplyListQuotation" />
+    <configuration name="ItemRepositoryTests.testDefaultAndTestReposHaveDiffSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="puc.pos.schoolsupply.model.*" />
+          <option name="PATTERN" value="puc.pos.schoolsupply.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="puc.pos.schoolsupply.schoolsupply.model" />
-      <option name="MAIN_CLASS_NAME" value="puc.pos.schoolsupply.model.QuotationTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="puc.pos.schoolsupply.repository" />
+      <option name="MAIN_CLASS_NAME" value="puc.pos.schoolsupply.repository.ItemRepositoryTests" />
+      <option name="METHOD_NAME" value="testDefaultAndTestReposHaveDiffSize" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -144,17 +166,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuotationTests.testQuotationTotal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SchoolSupplyListQuotation" />
+    <configuration name="ShopRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="puc.pos.schoolsupply.model.*" />
+          <option name="PATTERN" value="puc.pos.schoolsupply.repository.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="puc.pos.schoolsupply.schoolsupply.model" />
-      <option name="MAIN_CLASS_NAME" value="puc.pos.schoolsupply.model.QuotationTests" />
-      <option name="METHOD_NAME" value="testQuotationTotal" />
+      <option name="PACKAGE_NAME" value="puc.pos.schoolsupply.repository" />
+      <option name="MAIN_CLASS_NAME" value="puc.pos.schoolsupply.repository.ShopRepositoryTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ShopRepositoryTests.testTotalShopsEquals3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="puc.pos.schoolsupply.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="puc.pos.schoolsupply.repository" />
+      <option name="MAIN_CLASS_NAME" value="puc.pos.schoolsupply.repository.ShopRepositoryTests" />
+      <option name="METHOD_NAME" value="testTotalShopsEquals3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -162,10 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ItemRepositoryTests.testDefaultAndTestReposHaveDiffSize" />
+        <item itemvalue="Application.Application (1)" />
+        <item itemvalue="JUnit.ShopRepositoryTests.testTotalShopsEquals3" />
+        <item itemvalue="JUnit.ShopRepositoryTests" />
         <item itemvalue="JUnit.QuotationTests.testQuotationTotal (1)" />
-        <item itemvalue="JUnit.QuotationTests" />
-        <item itemvalue="JUnit.QuotationTests.testQuotationTotal" />
-        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>

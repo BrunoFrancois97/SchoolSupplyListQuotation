@@ -1,11 +1,11 @@
 package puc.pos.schoolsupply.repository.util;
 
+import java.io.InputStream;
+
 public class ResourcesManipulator {
 
-    public static String getResourcePath(String fileName){
-        String s = ResourcesManipulator.class.getClassLoader().getResource("").toString() + fileName;
-        s = s.replace("file:/", "");
-        return s;
+    public static InputStream getResourceStream(String fileName){
+        return ResourcesManipulator.class.getClassLoader().getResourceAsStream(fileName);
     }
 
 }

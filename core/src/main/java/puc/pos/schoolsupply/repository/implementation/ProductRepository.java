@@ -1,30 +1,36 @@
 package puc.pos.schoolsupply.repository.implementation;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import puc.pos.schoolsupply.model.Product;
 import puc.pos.schoolsupply.repository.contract.IProductRepository;
 import puc.pos.schoolsupply.repository.util.ResourcesManipulator;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.Reader;
-import java.util.ArrayList;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.List;
 
 
 public class ProductRepository implements IProductRepository {
 
-    private static final String PRODUCTS_JSON = ResourcesManipulator.getResourcePath("products.json");
+    private static final String JSON = "products.json";
 
     private static List<Product> products;
 
     public ProductRepository(){
-        Gson gson = new Gson();
-        try{
-            Reader reader = new FileReader(PRODUCTS_JSON);
-            products = gson.fromJson(reader, new TypeToken<ArrayList<Product>>(){}.getType());
-        } catch (FileNotFoundException e) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(ResourcesManipulator.getResourceStream(JSON)));
+        try {
+            buildList(reader);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public ProductRepository(String resourceFile){
+        BufferedReader reader = new BufferedReader(new InputStreamReader(ResourcesManipulator.getResourceStream(resourceFile)));
+        try {
+            buildList(reader);
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -47,6 +53,12 @@ public class ProductRepository implements IProductRepository {
 
     public List<Product> findAll() {
         return products;
+    }
+
+    private void buildList(BufferedReader br) throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        products = mapper.readValue(br, mapper.getTypeFactory().constructCollectionType(List.class, Product.class));
+        br.close();
     }
 
 }

@@ -1,46 +1,43 @@
 package puc.pos.schoolsupply.repository.implementation;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import puc.pos.schoolsupply.model.Quotation;
 import puc.pos.schoolsupply.model.School;
 import puc.pos.schoolsupply.model.SupplyList;
 import puc.pos.schoolsupply.repository.contract.IQuotationRepository;
+import puc.pos.schoolsupply.repository.contract.IShopRepository;
+import puc.pos.schoolsupply.repository.contract.ISupplyListRepository;
 import puc.pos.schoolsupply.repository.util.ResourcesManipulator;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.Reader;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
 
 public class QuotationRepository implements IQuotationRepository {
 
-    private static final String QUOTATION_JSON = ResourcesManipulator.getResourcePath("quotations.json");
+    private static final String JSON = "quotations.json";
 
     private static List<Quotation> quotationList;
 
     public QuotationRepository(){
-        Gson gson = new Gson();
-        quotationList = new ArrayList<>();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(ResourcesManipulator.getResourceStream(JSON)));
         try {
-            Reader reader = new FileReader(QUOTATION_JSON);
-            List<QuotationJSON> quotationJSON = gson.fromJson(reader, new TypeToken<ArrayList<QuotationJSON>>(){}.getType());
-            ShopRepository shopRepository = new ShopRepository();
-            SupplyListRepository supplyListRepository = new SupplyListRepository();
-            for(QuotationJSON q : quotationJSON){
-                Quotation quotation = new Quotation();
-                quotation.setQuotedBy(q.quotedBy);
-                quotation.setTotalPrice(q.totalPrice);
-                quotation.setSupplyList(supplyListRepository.findBySchoolLevelAndYear(q.school, q.level, q.year));
-                quotation.setShop(shopRepository.findByName(q.shop));
-                quotationList.add(quotation);
-            }
-        } catch (FileNotFoundException e) {
+            buildList(reader);
+        } catch (IOException e) {
             e.printStackTrace();
         }
+    }
 
+    public QuotationRepository(String resourceFile){
+        BufferedReader reader = new BufferedReader(new InputStreamReader(ResourcesManipulator.getResourceStream(resourceFile)));
+        try {
+            buildList(reader);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public Quotation findById(int id) {
@@ -58,12 +55,29 @@ public class QuotationRepository implements IQuotationRepository {
         return quotationList;
     }
 
+    private void buildList(BufferedReader br) throws IOException {
+        ObjectMapper mapper = new ObjectMapper();
+        List<QuotationJSON> quotationJSON = mapper.readValue(br, mapper.getTypeFactory().constructCollectionType(List.class, QuotationJSON.class));
+        br.close();
+        quotationList = new ArrayList<Quotation>();
+        IShopRepository shopRepository = new ShopRepository();
+        ISupplyListRepository supplyListRepository = new SupplyListRepository();
+        for(QuotationJSON q : quotationJSON){
+            Quotation quotation = new Quotation();
+            quotation.setQuotedBy(q.quotedBy);
+            quotation.setTotalPrice(q.totalPrice);
+            quotation.setSupplyList(supplyListRepository.findBySchoolLevelAndYear(q.school, q.level, q.year));
+            quotation.setShop(shopRepository.findByName(q.shop));
+            quotationList.add(quotation);
+        }
+    }
+
     private static class QuotationJSON{
-        private String quotedBy;
-        private double totalPrice;
-        private School school;
-        private int level;
-        private int year;
-        private String shop;
+        public String quotedBy;
+        public double totalPrice;
+        public School school;
+        public int level;
+        public int year;
+        public String shop;
     }
 }
