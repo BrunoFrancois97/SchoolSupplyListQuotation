@@ -2,30 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78d1a14a-da78-4fc2-a790-38ae3d7f41b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/core/src/test/java/puc/pos/schoolsupply/repository/ItemRepositoryTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/test/java/puc/pos/schoolsupply/repository/ShopRepositoryTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/test/resources/supplyLists_test.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/SchoolSupplyRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/model/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/model/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/ItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/QuotationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/QuotationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/SchoolRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/SchoolRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/ShopRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/ShopRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/SupplyListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/SupplyListRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/util/GenerateShopJSON.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/util/GenerateSupplyListJSON.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/util/ResourcesManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/util/ResourcesManipulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/supplyLists.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/supplyLists.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/resources/items.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/items_test.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/resources/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/products_test.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/resources/quotations.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/quotations_test.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/resources/schools.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/schools_test.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/resources/shops.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/test/resources/shops_test.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/test/resources/supplyLists.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/QuotationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/QuotationController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -102,8 +85,8 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn war:war" />
-      <command value="mvn cargo:run" />
       <command value="mvn clean install cargo:run" />
+      <command value="mvn cargo:run" />
       <command value="mvn clean install" />
       <command value="mvn clean" />
     </option>
