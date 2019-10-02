@@ -1,0 +1,9 @@
+<div>
+  <select [(ngModel)]="selectedSchool" (ngModelChange)="foo()">
+    <option *ngFor="let school of schools" [ngValue]="school">{{school.name}}</option>
+  </select>
+  <select [(ngModel)]="selectedGrade">
+    <option *ngFor="let grade of grades" [ngValue]="grade">{{grade.name}}</option>
+  </select>
+  <button>Make Quotation</button>
+</div>
