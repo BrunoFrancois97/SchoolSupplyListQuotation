@@ -9,7 +9,7 @@ import { Item } from '../../../model/item';
 export class ItemsListComponent implements OnInit {
 
   @Input()
-  public item: Item;
+  public items: Array<Item>;
 
   constructor() { }
 

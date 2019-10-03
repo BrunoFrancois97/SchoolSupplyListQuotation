@@ -1,9 +1,18 @@
-<div class="item-list-container">
+<div class="item-list-container" class="table table-bordered">
   <table>
-    <tr>
+    <thead>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Price</th>
+        <th scope="col">Extended Price</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let item of items">
       <td>{{item.name}}</td>
       <td>{{item.quantity}}</td>
       <td>{{item.price}}</td>
+      <td>{{item.extendedPrice}}</td>
     </tr>
   </table>
 </div>

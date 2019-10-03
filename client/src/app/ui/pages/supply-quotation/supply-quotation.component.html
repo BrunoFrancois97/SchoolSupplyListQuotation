@@ -2,7 +2,7 @@
 <div class="container">
   <div class="forms">
     <div class="vertical-spacer"> School
-      <select class="selector" [(ngModel)]="selectedSchool" (ngModelChange)="foo()">
+      <select class="selector" [(ngModel)]="selectedSchool" (ngModelChange)="onModelChanged()">
         <option *ngFor="let school of schools" [ngValue]="school">{{school.name}}</option>
       </select>
     </div>
@@ -12,7 +12,8 @@
       </select>
     </div>
     <div class="vertical-spacer">
-      <button [disabled]="!areRequiredFieldsFilled" (click)="makeQuotation()">Make Quotation</button>
+      <button type="button" class="btn btn-primary" [disabled]="!areRequiredFieldsFilled" (click)="makeQuotation()">Make
+        Quotation</button>
     </div>
     <div class="invalid-field" *ngIf="!isSchoolSelected">
       School is required
@@ -21,15 +22,8 @@
       Grade is required
     </div>
     <div *ngIf="isQuotationMade" class="supply-list">
-      <div>
-        <tr>
-          <th>Item</th>
-          <th>Quantity</th>
-          <th>Price</th>
-        </tr>
-      </div>
-      <items-list *ngFor="let item of items" [item]="item"></items-list>
-      <div>Total = {{totalPrice}}</div>
+      <items-list [items]="items"></items-list>
+      <div class="total-price">Total = {{totalPrice}}</div>
     </div>
   </div>
 </div>
