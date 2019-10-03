@@ -3,6 +3,7 @@ import { SchoolService } from '../../../service/school.service';
 import { SupplyListQuotationService } from '../../../service/supply-list-quotation.service';
 import { Item } from '../../../model/item';
 import { SupplyListQuotationRepository } from '../../../repository/supply-list-quotation.repository';
+import { School } from '../../../model/school';
 
 @Component({
   selector: 'supply-quotation',
@@ -17,6 +18,7 @@ export class SupplyQuotationComponent implements OnInit {
   public selectedSchool;
   public selectedGrade;
   public totalPrice: number;
+  public schools: Array<School>;
 
   constructor(
     private schoolService: SchoolService,
@@ -24,6 +26,13 @@ export class SupplyQuotationComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.schoolService.getSchools()
+      .subscribe(
+        foundSchools => {
+          this.schools = foundSchools;
+        }, error => {
+          console.log(error);
+        })
   }
 
   public get isSchoolSelected(): boolean {
@@ -37,14 +46,6 @@ export class SupplyQuotationComponent implements OnInit {
   public get areRequiredFieldsFilled(): boolean {
     return this.isSchoolSelected && this.isGradeSelected;
   }
-
-  public schools = [
-    { id: 1, name: "A" },
-    { id: 2, name: "B" },
-    { id: 3, name: "C" },
-    { id: 4, name: "D" },
-    { id: 5, name: "E" }
-  ];
 
   public items: Array<Item>;
 
@@ -94,7 +95,7 @@ export class SupplyQuotationComponent implements OnInit {
         { quantity: 5, name: "Pen", price: 2, extendedPrice: 10, },
         { quantity: 2, name: "Notebook", price: 3, extendedPrice: 6, },
         { quantity: 2, name: "Eraser", price: 4, extendedPrice: 8, },
-        { quantity: 1, name: "Sharpner", price: 5, extendedPrice: 5,},
+        { quantity: 1, name: "Sharpner", price: 5, extendedPrice: 5, },
       ];
     }
     this.totalPrice = this.items.map(i => i.extendedPrice).reduce((accumulator, current) => accumulator + current);

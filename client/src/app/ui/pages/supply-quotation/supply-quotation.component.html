@@ -3,7 +3,7 @@
   <div class="forms">
     <div class="vertical-spacer"> School
       <select class="selector" [(ngModel)]="selectedSchool" (ngModelChange)="onModelChanged()">
-        <option *ngFor="let school of schools" [ngValue]="school">{{school.name}}</option>
+        <option *ngFor="let school of schools" [ngValue]="school">{{school.school}}</option>
       </select>
     </div>
     <div class="vertical-spacer"> Grade

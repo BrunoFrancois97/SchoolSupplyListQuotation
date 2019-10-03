@@ -9,7 +9,7 @@ export class SchoolService {
     constructor(private repository: SchoolRepository) {
     }
 
-    public getSchools(): Observable<School> {
+    public getSchools(): Observable<Array<School>> {
         return this.repository.getSchools();
     }
 }
