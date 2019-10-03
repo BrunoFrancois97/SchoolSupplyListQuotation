@@ -63,7 +63,7 @@ public class SupplyListRepository implements ISupplyListRepository {
     }
 
     // TODO
-    public List<SupplyList> findBySchoolAndLevel(School school, int level) {
+    public SupplyList findBySchoolAndLevel(School school, int level) {
         return null;
     }
 
@@ -89,6 +89,8 @@ public class SupplyListRepository implements ISupplyListRepository {
         return supplyLists;
     }
 
+    // TODO
+    // Add check for levels in schools.json
     private void buildList(BufferedReader br) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         List<SupplyListJSON> supplyListJSON = mapper.readValue(br, mapper.getTypeFactory().constructCollectionType(List.class, SupplyListJSON.class));

@@ -1,10 +1,12 @@
 package puc.pos.schoolsupply.model;
 
+import java.util.List;
 import java.util.Objects;
 
 public class School {
 
     private String name;
+    private List<Integer> levels;
 
     public School() {
 
@@ -14,6 +16,11 @@ public class School {
         this.name = name;
     }
 
+    public School(String name, List<Integer> levels){
+        this.name = name;
+        this.levels = levels;
+    }
+
     public String getName() {
         return name;
     }
@@ -21,6 +28,10 @@ public class School {
     public void setName(String name) {
         this.name = name;
     }
+
+    public List<Integer> getLevels() { return levels; }
+
+    public void setLevels(List<Integer> levels) { this.levels = levels; }
 
     @Override
     public boolean equals(Object obj){

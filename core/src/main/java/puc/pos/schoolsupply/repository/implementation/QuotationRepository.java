@@ -1,9 +1,11 @@
 package puc.pos.schoolsupply.repository.implementation;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import puc.pos.schoolsupply.model.Item;
 import puc.pos.schoolsupply.model.Quotation;
 import puc.pos.schoolsupply.model.School;
 import puc.pos.schoolsupply.model.SupplyList;
+import puc.pos.schoolsupply.repository.contract.IItemRepository;
 import puc.pos.schoolsupply.repository.contract.IQuotationRepository;
 import puc.pos.schoolsupply.repository.contract.IShopRepository;
 import puc.pos.schoolsupply.repository.contract.ISupplyListRepository;
@@ -62,12 +64,19 @@ public class QuotationRepository implements IQuotationRepository {
         quotationList = new ArrayList<Quotation>();
         IShopRepository shopRepository = new ShopRepository();
         ISupplyListRepository supplyListRepository = new SupplyListRepository();
+        IItemRepository itemRepository = new ItemRepository();
         for(QuotationJSON q : quotationJSON){
             Quotation quotation = new Quotation();
             quotation.setQuotedBy(q.quotedBy);
             quotation.setTotalPrice(q.totalPrice);
-            quotation.setSupplyList(supplyListRepository.findBySchoolLevelAndYear(q.school, q.level, q.year));
+            quotation.setSupplyList(supplyListRepository.findBySchoolLevelAndYear(new School(q.school), q.level, q.year));
             quotation.setShop(shopRepository.findByName(q.shop));
+            List<Item> items = new ArrayList<Item>();
+            for(Integer i : q.items){
+                Item item = itemRepository.findById(i);
+                items.add(item);
+            }
+            quotation.setItems(items);
             quotationList.add(quotation);
         }
     }
@@ -75,9 +84,10 @@ public class QuotationRepository implements IQuotationRepository {
     private static class QuotationJSON{
         public String quotedBy;
         public double totalPrice;
-        public School school;
+        public String school;
         public int level;
         public int year;
         public String shop;
+        public List<Integer> items;
     }
 }

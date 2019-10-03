@@ -2,13 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78d1a14a-da78-4fc2-a790-38ae3d7f41b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/factory/SchoolDtoFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/model/dto/LevelDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/model/dto/SchoolDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/service/contract/ICalculateQuotationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/service/implementation/CalculateQuotationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/service/implementation/SchoolsRestService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/QuotationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/QuotationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/model/Quotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/model/Quotation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/model/School.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/model/School.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/contract/ISupplyListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/contract/ISupplyListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/QuotationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/QuotationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/SupplyListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/repository/implementation/SupplyListRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/service/contract/ISupplyListService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/service/contract/ISupplyListService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/resources/quotations.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/quotations.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/resources/schools.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/schools.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/SchoolSupplyRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/SchoolSupplyRestController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -87,8 +98,8 @@
       <command value="mvn war:war" />
       <command value="mvn clean install cargo:run" />
       <command value="mvn cargo:run" />
-      <command value="mvn clean install" />
       <command value="mvn clean" />
+      <command value="mvn clean install" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -103,7 +114,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ItemRepositoryTests.testDefaultAndTestReposHaveDiffSize">
+  <component name="RunManager" selected="Application.Application (1)">
     <configuration name="Application (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="puc.pos.schoolsupply.Application" />
       <module name="core" />
@@ -182,8 +193,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ItemRepositoryTests.testDefaultAndTestReposHaveDiffSize" />
         <item itemvalue="Application.Application (1)" />
+        <item itemvalue="JUnit.ItemRepositoryTests.testDefaultAndTestReposHaveDiffSize" />
         <item itemvalue="JUnit.ShopRepositoryTests.testTotalShopsEquals3" />
         <item itemvalue="JUnit.ShopRepositoryTests" />
         <item itemvalue="JUnit.QuotationTests.testQuotationTotal (1)" />
@@ -218,21 +229,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/service/implementation/QuotationService.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/service/implementation/QuotationService.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

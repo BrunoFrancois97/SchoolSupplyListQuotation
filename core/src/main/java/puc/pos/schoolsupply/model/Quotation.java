@@ -1,21 +1,25 @@
 package puc.pos.schoolsupply.model;
 
+import java.util.List;
+
 public class Quotation {
 
     private String quotedBy;
     private double totalPrice;
     private SupplyList supplyList;
     private Shop shop;
+    private List<Item> items;
 
     public Quotation(){
 
     }
 
-    public Quotation(String quotedBy, double totalPrice, SupplyList supplyList, Shop shop){
+    public Quotation(String quotedBy, double totalPrice, SupplyList supplyList, Shop shop, List<Item> items){
         this.quotedBy = quotedBy;
         this.totalPrice = totalPrice;
         this.supplyList = supplyList;
         this.shop = shop;
+        this.items = items;
     }
 
     public String getQuotedBy() {
@@ -48,5 +52,13 @@ public class Quotation {
 
     public void setShop(Shop shop) {
         this.shop = shop;
+    }
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public void setItems(List<Item> items) {
+        this.items = items;
     }
 }

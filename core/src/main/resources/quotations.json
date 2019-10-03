@@ -2,11 +2,10 @@
   {
     "quotedBy": "Bruno",
     "totalPrice": 30.26,
-    "school": {
-      "name": "Escola A"
-    },
+    "school": "Escola A",
     "level": 2,
     "year": 2016,
-    "shop": "Papelaria B"
+    "shop": "Papelaria B",
+    "items": [0, 1, 2, 3, 4]
   }
 ]

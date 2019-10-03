@@ -11,7 +11,7 @@ public interface ISupplyListRepository {
     List<SupplyList> findBySchool(School school);
     List<SupplyList> findByYear(int year);
     List<SupplyList> findByLevel(int level);
-    List<SupplyList> findBySchoolAndLevel(School school, int level);
+    SupplyList findBySchoolAndLevel(School school, int level);
     List<SupplyList> findBySchoolAndYear(School school, int year);
     SupplyList findBySchoolLevelAndYear(School school, int level, int year);
     List<SupplyList> findAll();
