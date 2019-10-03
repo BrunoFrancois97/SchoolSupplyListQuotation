@@ -1,6 +1,9 @@
 package puc.pos.schoolsupply.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+import puc.pos.schoolsupply.config.filter.CORSFilter;
+
+import javax.servlet.Filter;
 
 public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
 
@@ -17,6 +20,12 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};
+    }
+
+    @Override
+    protected Filter[] getServletFilters() {
+        Filter [] filters = {new CORSFilter()};
+        return filters;
     }
 
 }

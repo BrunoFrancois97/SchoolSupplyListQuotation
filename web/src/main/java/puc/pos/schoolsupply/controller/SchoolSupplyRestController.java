@@ -1,5 +1,6 @@
 package puc.pos.schoolsupply.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,6 +23,7 @@ public class SchoolSupplyRestController {
         return supplyListRepository.findAll();
     }
 
+    @CrossOrigin
     @GetMapping("/schools")
     public List<SchoolDto> getSchoolsAndLevels(){
         SchoolsRestService service = new SchoolsRestService();
