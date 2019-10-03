@@ -1,9 +1,35 @@
-<div>
-  <select [(ngModel)]="selectedSchool" (ngModelChange)="foo()">
-    <option *ngFor="let school of schools" [ngValue]="school">{{school.name}}</option>
-  </select>
-  <select [(ngModel)]="selectedGrade">
-    <option *ngFor="let grade of grades" [ngValue]="grade">{{grade.name}}</option>
-  </select>
-  <button>Make Quotation</button>
+<h1>Make your Quotation</h1>
+<div class="container">
+  <div class="forms">
+    <div class="vertical-spacer"> School
+      <select class="selector" [(ngModel)]="selectedSchool" (ngModelChange)="foo()">
+        <option *ngFor="let school of schools" [ngValue]="school">{{school.name}}</option>
+      </select>
+    </div>
+    <div class="vertical-spacer"> Grade
+      <select class="selector" [(ngModel)]="selectedGrade">
+        <option *ngFor="let grade of grades" [ngValue]="grade">{{grade.name}}</option>
+      </select>
+    </div>
+    <div class="vertical-spacer">
+      <button [disabled]="!areRequiredFieldsFilled" (click)="makeQuotation()">Make Quotation</button>
+    </div>
+    <div class="invalid-field" *ngIf="!isSchoolSelected">
+      School is required
+    </div>
+    <div class="invalid-field" *ngIf="!isGradeSelected">
+      Grade is required
+    </div>
+    <div *ngIf="isQuotationMade" class="supply-list">
+      <div>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </div>
+      <items-list *ngFor="let item of items" [item]="item"></items-list>
+      <div>Total = {{totalPrice}}</div>
+    </div>
+  </div>
 </div>

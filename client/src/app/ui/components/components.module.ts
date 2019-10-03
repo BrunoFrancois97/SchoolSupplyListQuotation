@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../../shared.module';
+import { ItemsListComponent } from './items-list/items-list.component';
 
 
 @NgModule({
@@ -11,6 +12,12 @@ import { SharedModule } from '../../shared.module';
         ReactiveFormsModule,
         SharedModule
     ],
+    declarations: [
+        ItemsListComponent
+    ],
+    exports: [
+        ItemsListComponent
+    ]
 })
 export class ComponentsModule {
 }
