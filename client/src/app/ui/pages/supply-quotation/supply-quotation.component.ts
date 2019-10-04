@@ -4,6 +4,7 @@ import { SupplyListQuotationService } from '../../../service/supply-list-quotati
 import { Item } from '../../../model/item';
 import { SupplyListQuotationRepository } from '../../../repository/supply-list-quotation.repository';
 import { School } from '../../../model/school';
+import { Level } from '../../../model/level';
 
 @Component({
   selector: 'supply-quotation',
@@ -49,32 +50,9 @@ export class SupplyQuotationComponent implements OnInit {
 
   public items: Array<Item>;
 
-  public gradesA = [
-    { id: 1, name: "1" },
-    { id: 2, name: "2" },
-    { id: 3, name: "3" },
-    { id: 4, name: "4" },
-    { id: 5, name: "5" }
-  ];
-
-  public gradesB = [
-    { id: 1, name: "10" },
-    { id: 2, name: "20" },
-    { id: 3, name: "30" },
-    { id: 4, name: "40" },
-    { id: 5, name: "50" }
-  ];
-
   public onModelChanged() {
-    if (this.selectedSchool.id == 1) {
-      this.grades = this.gradesA;
-    }
-    else if (this.selectedSchool.id == 2) {
-      this.grades = this.gradesB;
-    }
-    else {
-      this.grades = null;
-    }
+    let schoolsCopy = Object.assign(this.schools, new Array<School>());
+    this.grades = schoolsCopy.filter(c => c.school == this.selectedSchool.school).flatMap(c => c.levels);
   }
 
   public makeQuotation() {
