@@ -1,6 +1,6 @@
 package puc.pos.schoolsupply.factory;
 
-import puc.pos.schoolsupply.model.dto.LevelDto;
+import puc.pos.schoolsupply.model.dto.util.LevelDto;
 import puc.pos.schoolsupply.model.dto.SchoolDto;
 
 import java.util.ArrayList;

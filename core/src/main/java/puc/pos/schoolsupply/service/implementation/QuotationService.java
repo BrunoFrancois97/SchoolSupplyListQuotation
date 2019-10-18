@@ -18,7 +18,9 @@ public class QuotationService implements IQuotationService {
     public Quotation makeQuotation(SupplyList supplyList) {
         Quotation quotation = new Quotation();
         quotation.setQuotedBy("Tester");
-        Shop shop = shopService.findById(1);
+        quotation.setSupplyList(supplyList);
+        Shop shop = shopService.findById(0);
+        quotation.setShop(shop);
         quotation.setTotalPrice(calculateTotalPrice(enrichProduct(shop.getProducts(), supplyList.getItems())));
         return quotation;
     }

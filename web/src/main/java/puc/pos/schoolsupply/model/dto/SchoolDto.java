@@ -1,18 +1,20 @@
 package puc.pos.schoolsupply.model.dto;
 
+import puc.pos.schoolsupply.model.dto.util.LevelDto;
+
 import java.util.List;
 
 public class SchoolDto {
 
-    private String school;
+    private String schoolName;
     private List<LevelDto> levels;
 
-    public String getSchool() {
-        return school;
+    public String getSchoolName() {
+        return schoolName;
     }
 
-    public void setSchool(String school) {
-        this.school = school;
+    public void setSchool(String schoolName) {
+        this.schoolName = schoolName;
     }
 
     public List<LevelDto> getLevels() {

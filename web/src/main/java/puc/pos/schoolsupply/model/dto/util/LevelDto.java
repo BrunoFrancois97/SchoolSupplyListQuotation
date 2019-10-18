@@ -1,4 +1,4 @@
-package puc.pos.schoolsupply.model.dto;
+package puc.pos.schoolsupply.model.dto.util;
 
 public class LevelDto {
 

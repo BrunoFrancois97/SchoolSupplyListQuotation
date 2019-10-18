@@ -1,9 +1,9 @@
 package puc.pos.schoolsupply.service.contract;
 
-import puc.pos.schoolsupply.model.Quotation;
-import puc.pos.schoolsupply.model.dto.QuotatorDto;
+import puc.pos.schoolsupply.model.dto.QuotationDto;
+import puc.pos.schoolsupply.model.dto.request.QuotatorRequestDto;
 
 public interface IQuotatorService {
 
-    Quotation findQuotation(QuotatorDto quotatorDto);
+    QuotationDto makeQuotationDto(QuotatorRequestDto quotatorRequestDto);
 }
