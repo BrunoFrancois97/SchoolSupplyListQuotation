@@ -25,7 +25,7 @@ export class SchoolRepository {
     private transform(schoolResources: SchoolResources): School {
        let school = new School();
 
-       school.school = schoolResources.school;
+       school.schoolName = schoolResources.schoolName;
        school.levels = schoolResources.levels.map(level => this.transformLevels(level));
        
        return school;

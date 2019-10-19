@@ -1,29 +1,31 @@
-<h1>Make your Quotation</h1>
+<h1>Faça sua Cotação</h1>
 <div class="container">
   <div class="forms">
-    <div class="vertical-spacer"> School
+    <div class="vertical-spacer"> Escola
       <select class="selector" [(ngModel)]="selectedSchool" (ngModelChange)="onModelChanged()">
-        <option *ngFor="let school of schools" [ngValue]="school">{{school.school}}</option>
+        <option *ngFor="let school of schools" [ngValue]="school">{{school.schoolName}}</option>
       </select>
     </div>
-    <div class="vertical-spacer"> Grade
-      <select class="selector" [(ngModel)]="selectedGrade">
+    <div class="vertical-spacer"> Série
+      <select class="selector" [(ngModel)]="selectedLevel">
         <option *ngFor="let grade of grades" [ngValue]="grade">{{grade.name}}</option>
       </select>
     </div>
     <div class="vertical-spacer">
-      <button type="button" class="btn btn-primary" [disabled]="!areRequiredFieldsFilled" (click)="makeQuotation()">Make
-        Quotation</button>
+      <button type="button" class="btn btn-primary" [disabled]="!areRequiredFieldsFilled"
+        (click)="makeQuotation()">Fazer
+        Cotação</button>
     </div>
     <div class="invalid-field" *ngIf="!isSchoolSelected">
-      School is required
+      Escolha é obrigatória
     </div>
     <div class="invalid-field" *ngIf="!isGradeSelected">
-      Grade is required
+      Série é obrigatória
     </div>
     <div *ngIf="isQuotationMade" class="supply-list">
+      <h3 class="shop-name">Nome da Loja : {{shopName}}</h3>
       <items-list [items]="items"></items-list>
-      <div class="total-price">Total = {{totalPrice}}</div>
+      <h3 class="total-price">Total = R$ {{totalPrice}}</h3>
     </div>
   </div>
 </div>

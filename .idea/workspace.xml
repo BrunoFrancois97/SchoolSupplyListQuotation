@@ -2,20 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78d1a14a-da78-4fc2-a790-38ae3d7f41b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/factory/QuotationDtoFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/model/dto/util/QuotationProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/model/chosen-school.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/model/product.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/model/quotation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/repository/resources/product.resource.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/app/repository/resources/quotation.resource.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/service/implementation/QuotationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/puc/pos/schoolsupply/service/implementation/QuotationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/resources/shops.json" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/resources/shops.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/QuotationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/QuotationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/SchoolSupplyRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/SchoolSupplyRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/factory/SchoolDtoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/factory/SchoolDtoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/model/dto/LevelDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/model/dto/util/LevelDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/model/dto/QuotationDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/model/dto/QuotationDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/model/dto/QuotatorDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/model/dto/request/QuotatorRequestDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/model/dto/SchoolDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/model/dto/SchoolDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/service/contract/IQuotatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/service/contract/IQuotatorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/service/implementation/QuotatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/service/implementation/QuotatorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/model/item.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/model/supplylist.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/repository/resources/school.resources.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/repository/resources/school.resources.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/repository/resources/supply-list.resources.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/repository/school.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/repository/school.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/repository/supply-list-quotation.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/repository/supply-list-quotation.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/service/supply-list-quotation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/service/supply-list-quotation.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/ui/pages/supply-quotation/supply-quotation.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/ui/pages/supply-quotation/supply-quotation.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/app/ui/pages/supply-quotation/supply-quotation.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/app/ui/pages/supply-quotation/supply-quotation.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,8 +97,8 @@
       <command value="mvn clean install cargo:run" />
       <command value="mvn clean install cargo: run" />
       <command value="mvn cargo:run" />
-      <command value="mvn clean install" />
       <command value="mvn clean" />
+      <command value="mvn clean install" />
     </option>
   </component>
   <component name="RunDashboard">
@@ -237,5 +238,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/src/main/java/puc/pos/schoolsupply/controller/SchoolSupplyRestController.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
