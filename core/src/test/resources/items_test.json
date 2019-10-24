@@ -33,5 +33,10 @@
     "id": 6,
     "description": "Cola bastao",
     "quantity": 1
+  },
+  {
+    "id": 7,
+    "description": "Apontador",
+    "quantity": 1
   }
 ]

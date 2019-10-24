@@ -38,6 +38,6 @@ public class QuotationTests {
     public void testQuotationTotal() {
         Quotation quotation = quotationService.makeQuotation(supplyList);
         Assertions.assertNotNull(quotation);
-        Assertions.assertEquals(52.8, quotation.getTotalPrice(),0.01);
+        Assertions.assertEquals(57, quotation.getTotalPrice(),0.01);
     }
 }

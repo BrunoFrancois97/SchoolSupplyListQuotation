@@ -1,5 +1,7 @@
 package puc.pos.schoolsupply.service.implementation;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import puc.pos.schoolsupply.model.*;
 import puc.pos.schoolsupply.service.contract.IQuotationService;
 import puc.pos.schoolsupply.service.contract.IShopService;
@@ -7,10 +9,12 @@ import puc.pos.schoolsupply.service.contract.IShopService;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class QuotationService implements IQuotationService {
 
     private final IShopService shopService;
 
+    @Autowired
     public QuotationService(IShopService shopService) {
         this.shopService = shopService;
     }

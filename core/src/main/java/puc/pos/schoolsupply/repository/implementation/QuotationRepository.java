@@ -15,7 +15,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class QuotationRepository implements IQuotationRepository {
 
     private static final String JSON = "quotations.json";

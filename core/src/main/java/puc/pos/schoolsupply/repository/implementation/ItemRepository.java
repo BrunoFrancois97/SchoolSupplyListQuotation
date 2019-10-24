@@ -1,6 +1,7 @@
 package puc.pos.schoolsupply.repository.implementation;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.stereotype.Repository;
 import puc.pos.schoolsupply.model.Item;
 import puc.pos.schoolsupply.repository.contract.IItemRepository;
 import puc.pos.schoolsupply.repository.util.ResourcesManipulator;
@@ -8,7 +9,7 @@ import puc.pos.schoolsupply.repository.util.ResourcesManipulator;
 import java.io.*;
 import java.util.List;
 
-
+@Repository
 public class ItemRepository implements IItemRepository {
 
     private static final String JSON = "items.json";

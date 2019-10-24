@@ -1,6 +1,7 @@
 package puc.pos.schoolsupply.repository.implementation;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.stereotype.Repository;
 import puc.pos.schoolsupply.model.School;
 import puc.pos.schoolsupply.model.SupplyList;
 import puc.pos.schoolsupply.repository.contract.IItemRepository;
@@ -14,6 +15,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class SupplyListRepository implements ISupplyListRepository {
 
     private static final String JSON = "supplyLists.json";
@@ -50,26 +52,6 @@ public class SupplyListRepository implements ISupplyListRepository {
             }
         }
         return schoolList;
-    }
-
-    // TODO
-    public List<SupplyList> findByYear(int year) {
-        return null;
-    }
-
-    // TODO
-    public List<SupplyList> findByLevel(int level) {
-        return null;
-    }
-
-    // TODO
-    public SupplyList findBySchoolAndLevel(School school, int level) {
-        return null;
-    }
-
-    // TODO
-    public List<SupplyList> findBySchoolAndYear(School school, int year) {
-        return null;
     }
 
     public SupplyList findBySchoolLevelAndYear(School school, int level, int year) {

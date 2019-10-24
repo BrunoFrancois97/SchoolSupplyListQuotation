@@ -1,24 +1,26 @@
-package puc.pos.schoolsupply.service.implementation;
+package puc.pos.schoolsupply.facade.implementation;
 
-import org.springframework.stereotype.Service;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import puc.pos.schoolsupply.facade.contract.ISchoolFacade;
 import puc.pos.schoolsupply.factory.SchoolDtoFactory;
 import puc.pos.schoolsupply.model.School;
 import puc.pos.schoolsupply.model.dto.SchoolDto;
 import puc.pos.schoolsupply.repository.contract.ISchoolRepository;
-import puc.pos.schoolsupply.repository.implementation.SchoolRepository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
-public class SchoolsRestService {
+@Component
+public class SchoolFacade implements ISchoolFacade {
 
     private ISchoolRepository schoolRepository;
     private SchoolDtoFactory factory;
 
-    public SchoolsRestService(){
-        schoolRepository = new SchoolRepository();
-        factory = new SchoolDtoFactory();
+    @Autowired
+    public SchoolFacade(ISchoolRepository schoolRepository, SchoolDtoFactory factory){
+        this.schoolRepository = schoolRepository;
+        this.factory = factory;
     }
 
     public List<SchoolDto> findAll(){

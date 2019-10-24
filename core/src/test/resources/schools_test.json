@@ -1,11 +1,14 @@
 [
   {
-    "name": "Escola A"
+    "name": "Escola A",
+    "levels": [2, 4]
   },
   {
-    "name": "Escola B"
+    "name": "Escola B",
+    "levels": [8]
   },
   {
-    "name": "Escola C"
+    "name": "Escola C",
+    "levels": [2]
   }
 ]

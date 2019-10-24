@@ -1,11 +1,13 @@
 package puc.pos.schoolsupply.factory;
 
+import org.springframework.stereotype.Component;
 import puc.pos.schoolsupply.model.dto.util.LevelDto;
 import puc.pos.schoolsupply.model.dto.SchoolDto;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class SchoolDtoFactory {
 
     public SchoolDto createSchoolDto(String schoolName, List<Integer> levels){
