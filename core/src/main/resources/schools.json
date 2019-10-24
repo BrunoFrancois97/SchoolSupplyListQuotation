@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Escola A",
+    "levels": [2, 4]
+  },
+  {
+    "name": "Escola B",
+    "levels": [8]
+  },
+  {
+    "name": "Escola C",
+    "levels": [2]
+  }
+]

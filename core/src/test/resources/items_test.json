@@ -1,0 +1,42 @@
+[
+  {
+    "id": 0,
+    "description": "Caderno 200 folhas",
+    "quantity": 1
+  },
+  {
+    "id": 1,
+    "description": "Caneta azul",
+    "quantity": 2
+  },
+  {
+    "id": 2,
+    "description": "Borracha branca",
+    "quantity": 1
+  },
+  {
+    "id": 3,
+    "description": "Cola branca",
+    "quantity": 1
+  },
+  {
+    "id": 4,
+    "description": "Cartolina",
+    "quantity": 2
+  },
+  {
+    "id": 5,
+    "description": "Lapis preto",
+    "quantity": 3
+  },
+  {
+    "id": 6,
+    "description": "Cola bastao",
+    "quantity": 1
+  },
+  {
+    "id": 7,
+    "description": "Apontador",
+    "quantity": 1
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "school": "Escola A",
+    "level": 2,
+    "year": 2019,
+    "items": [0, 1, 2, 3, 4]
+  },
+  {
+    "school": "Escola A",
+    "level": 4,
+    "year": 2019,
+    "items": [0, 2, 3, 5, 6]
+  },
+  {
+    "school": "Escola A",
+    "level": 4,
+    "year": 2017,
+    "items": [0, 2, 3, 4, 6]
+  },
+  {
+    "school": "Escola B",
+    "level": 8,
+    "year": 2019,
+    "items": [0, 1, 2, 4, 5, 6]
+  },
+  {
+    "school": "Escola C",
+    "level": 2,
+    "year": 2019,
+    "items": [0, 1, 6, 7]
+  }
+]
