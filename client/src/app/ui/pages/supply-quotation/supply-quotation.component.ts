@@ -54,6 +54,7 @@ export class SupplyQuotationComponent implements OnInit {
 
   public onModelChanged() {
     let schoolsCopy = Object.assign(this.schools, new Array<School>());
+    this.selectedLevel = null;
     this.grades = schoolsCopy.filter(c => c.schoolName == this.selectedSchool.schoolName).flatMap(c => c.levels);
   }
 
